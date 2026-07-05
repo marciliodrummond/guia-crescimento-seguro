@@ -45,6 +45,39 @@ html{scroll-behavior:smooth}body{background:var(--c-black);color:var(--c-body);f
   <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">  <!-- /SI mandatory assets -->
 <style id="si-ai-agentic-style">
+
+
+/* SI sector examples styles start */
+.si-sector-examples,
+.si-sector-examples *{box-sizing:border-box}
+.si-sector-examples{position:relative;overflow:hidden;padding:clamp(56px,8vw,92px) 0;background:
+radial-gradient(circle at 14% 0%,rgba(45,212,191,.14),transparent 28%),
+linear-gradient(180deg,rgba(8,13,18,.96),rgba(13,18,24,.98));color:#f7f3e8}
+.si-sector-examples::before{content:"";position:absolute;inset:0;background-image:
+linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px),
+linear-gradient(180deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:48px 48px;mask-image:linear-gradient(180deg,rgba(0,0,0,.45),transparent 70%);pointer-events:none}
+.si-sector-wrap{position:relative;z-index:1;width:min(1120px,calc(100% - 32px));margin:0 auto}
+.si-sector-kicker{display:inline-flex;align-items:center;gap:8px;margin:0 0 12px;padding:7px 10px;border:1px solid rgba(212,175,55,.42);border-radius:999px;color:#e8c766;background:rgba(212,175,55,.08);font:700 11px/1.1 Inter,system-ui,sans-serif;text-transform:uppercase;letter-spacing:.08em}
+.si-sector-title{max-width:900px;margin:0;color:#fff;font:800 clamp(28px,4vw,48px)/1.04 Inter,system-ui,sans-serif;letter-spacing:0}
+.si-sector-lead{max-width:860px;margin:18px 0 0;color:rgba(247,243,232,.78);font:400 clamp(16px,2vw,19px)/1.62 Inter,system-ui,sans-serif}
+.si-sector-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:28px}
+.si-sector-card{min-width:0;display:flex;flex-direction:column;gap:16px;padding:20px;border:1px solid rgba(255,255,255,.12);border-radius:8px;background:linear-gradient(180deg,rgba(255,255,255,.075),rgba(255,255,255,.035));box-shadow:0 22px 58px rgba(0,0,0,.28);overflow:hidden}
+.si-sector-card-head{display:flex;align-items:flex-start;justify-content:space-between;gap:14px}
+.si-sector-badge{flex:0 0 auto;display:grid;place-items:center;width:38px;height:38px;border-radius:8px;border:1px solid rgba(45,212,191,.36);background:rgba(45,212,191,.11);color:#7ee7d8;font:800 14px/1 Inter,system-ui,sans-serif}
+.si-sector-card h3{margin:0;color:#fff;font:800 21px/1.15 Inter,system-ui,sans-serif;letter-spacing:0}
+.si-sector-tag{display:inline-flex;align-items:center;white-space:nowrap;border:1px solid rgba(212,175,55,.36);border-radius:999px;padding:6px 8px;color:#f1d680;background:rgba(212,175,55,.08);font:700 11px/1 Inter,system-ui,sans-serif}
+.si-sector-label{margin:0 0 6px;color:#e8c766;font:800 11px/1 Inter,system-ui,sans-serif;text-transform:uppercase;letter-spacing:.06em}
+.si-sector-copy{margin:0;color:rgba(247,243,232,.82);font:400 15px/1.58 Inter,system-ui,sans-serif;overflow-wrap:anywhere}
+.si-sector-flow{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.si-sector-step{position:relative;min-width:0;padding:12px 10px;border-radius:8px;border:1px solid rgba(255,255,255,.1);background:rgba(2,6,12,.36);color:rgba(247,243,232,.86);font:700 13px/1.25 Inter,system-ui,sans-serif;text-align:center;overflow-wrap:anywhere}
+.si-sector-step span{display:block;margin-bottom:5px;color:#7ee7d8;font:800 10px/1 Inter,system-ui,sans-serif;text-transform:uppercase;letter-spacing:.06em}
+.si-sector-outcome{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:auto}
+.si-sector-outcome>div{min-width:0;padding:13px;border-radius:8px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.045)}
+.si-sector-note{margin-top:18px;padding:16px 18px;border:1px solid rgba(45,212,191,.25);border-radius:8px;background:rgba(45,212,191,.07);color:rgba(247,243,232,.82);font:700 14px/1.5 Inter,system-ui,sans-serif}
+@media (max-width:860px){.si-sector-grid{grid-template-columns:1fr}.si-sector-outcome{grid-template-columns:1fr}.si-sector-card{padding:18px}.si-sector-title{font-size:clamp(27px,8vw,40px)}}
+@media (max-width:560px){.si-sector-wrap{width:min(100% - 24px,1120px)}.si-sector-examples{padding:48px 0}.si-sector-card-head{display:grid;grid-template-columns:auto 1fr}.si-sector-tag{grid-column:1/-1;justify-content:center;white-space:normal;text-align:center}.si-sector-flow{grid-template-columns:1fr}.si-sector-step{text-align:left}.si-sector-card h3{font-size:20px}}
+/* SI sector examples styles end */
+
 /* SI solutions lab styles start */
 .skip-link:focus:not(:focus-visible){transform:translateY(-180%)!important}
 .si-solutions-lab{position:relative;z-index:2;margin:34px auto 48px;width:min(100% - 32px,1120px);border:1px solid rgba(226,192,116,.24);border-radius:8px;background:linear-gradient(135deg,rgba(9,13,18,.97),rgba(18,23,27,.95));box-shadow:0 26px 74px rgba(0,0,0,.32);overflow:hidden}
@@ -167,7 +200,122 @@ html{scroll-behavior:smooth}body{background:var(--c-black);color:var(--c-body);f
   </div>
 </section>
 <!-- SI solutions lab end -->
-
+<!-- SI sector examples start -->
+<section class="si-sector-examples reveal" id="exemplos-praticos-por-segmento" aria-labelledby="sector-examples-title">
+  <div class="si-sector-wrap">
+    <p class="si-sector-kicker">Aplicações por segmento</p>
+    <h2 class="si-sector-title" id="sector-examples-title">Exemplos práticos: crescer com demanda certa, capacidade real e governança.</h2>
+    <p class="si-sector-lead">Crescimento seguro não é gerar mais leads a qualquer custo. É atrair demanda com fit, medir capacidade de entrega e impedir que a venda crie caos operacional.</p>
+    <div class="si-sector-grid">
+<article class="si-sector-card">
+  <div class="si-sector-card-head">
+    <div class="si-sector-badge" aria-hidden="true">JU</div>
+    <div><h3>Prospecção jurídica com fit e capacidade</h3></div>
+    <span class="si-sector-tag">Jurídico</span>
+  </div>
+  <div>
+    <p class="si-sector-label">Cena real</p>
+    <p class="si-sector-copy">Campanhas e indicações trazem leads, mas o escritório precisa separar urgência real, tese viável e capacidade de atendimento.</p>
+  </div>
+  <div class="si-sector-flow" aria-label="Fluxo visual com IA">
+    <div class="si-sector-step"><span>Entrada</span>Campanha, indicação e CRM</div>
+    <div class="si-sector-step"><span>Agente</span>Agente qualifica tese, risco e fit</div>
+    <div class="si-sector-step"><span>Resultado</span>Agenda comercial com limite de capacidade</div>
+  </div>
+  <div class="si-sector-outcome">
+    <div>
+      <p class="si-sector-label">Ganho tangível</p>
+      <p class="si-sector-copy">Mais crescimento com controle de qualidade, evitando aceitar casos que derrubam margem ou reputação.</p>
+    </div>
+    <div>
+      <p class="si-sector-label">Piloto recomendado</p>
+      <p class="si-sector-copy">Esteira de aquisição jurídica com score de caso, capacidade e follow-up consultivo.</p>
+    </div>
+  </div>
+</article>
+<article class="si-sector-card">
+  <div class="si-sector-card-head">
+    <div class="si-sector-badge" aria-hidden="true">CO</div>
+    <div><h3>Campanha tributária sem virar avalanche</h3></div>
+    <span class="si-sector-tag">Contabilidade</span>
+  </div>
+  <div>
+    <p class="si-sector-label">Cena real</p>
+    <p class="si-sector-copy">Uma oferta sobre reforma tributária ou revisão fiscal pode gerar muitos contatos, mas nem todos têm documentação, porte ou urgência.</p>
+  </div>
+  <div class="si-sector-flow" aria-label="Fluxo visual com IA">
+    <div class="si-sector-step"><span>Entrada</span>Landing page e WhatsApp</div>
+    <div class="si-sector-step"><span>Agente</span>Agente separa fit, risco e escopo</div>
+    <div class="si-sector-step"><span>Resultado</span>Carteira recebe leads por prioridade</div>
+  </div>
+  <div class="si-sector-outcome">
+    <div>
+      <p class="si-sector-label">Ganho tangível</p>
+      <p class="si-sector-copy">O escritório contábil cresce com clientes compatíveis com a operação, não com volume desorganizado.</p>
+    </div>
+    <div>
+      <p class="si-sector-label">Piloto recomendado</p>
+      <p class="si-sector-copy">Funil de diagnóstico contábil com triagem automática e proposta por pacote.</p>
+    </div>
+  </div>
+</article>
+<article class="si-sector-card">
+  <div class="si-sector-card-head">
+    <div class="si-sector-badge" aria-hidden="true">IM</div>
+    <div><h3>Captação e comprador com prioridade real</h3></div>
+    <span class="si-sector-tag">Imobiliária</span>
+  </div>
+  <div>
+    <p class="si-sector-label">Cena real</p>
+    <p class="si-sector-copy">A imobiliária quer crescer a carteira, mas capta imóveis difíceis e compradores sem perfil, criando trabalho improdutivo.</p>
+  </div>
+  <div class="si-sector-flow" aria-label="Fluxo visual com IA">
+    <div class="si-sector-step"><span>Entrada</span>Anúncios, portais e indicações</div>
+    <div class="si-sector-step"><span>Agente</span>Agente avalia perfil, imóvel e urgência</div>
+    <div class="si-sector-step"><span>Resultado</span>Time foca nos melhores movimentos</div>
+  </div>
+  <div class="si-sector-outcome">
+    <div>
+      <p class="si-sector-label">Ganho tangível</p>
+      <p class="si-sector-copy">Mais energia nos imóveis e clientes que têm maior chance de gerar comissão saudável.</p>
+    </div>
+    <div>
+      <p class="si-sector-label">Piloto recomendado</p>
+      <p class="si-sector-copy">Score de captação e comprador com régua de prioridade comercial.</p>
+    </div>
+  </div>
+</article>
+<article class="si-sector-card">
+  <div class="si-sector-card-head">
+    <div class="si-sector-badge" aria-hidden="true">SA</div>
+    <div><h3>Agenda cresce sem colapsar experiência</h3></div>
+    <span class="si-sector-tag">Saúde</span>
+  </div>
+  <div>
+    <p class="si-sector-label">Cena real</p>
+    <p class="si-sector-copy">Campanhas aumentam procura, mas a clínica precisa equilibrar horário, especialidade, convênio, retorno e capacidade da equipe.</p>
+  </div>
+  <div class="si-sector-flow" aria-label="Fluxo visual com IA">
+    <div class="si-sector-step"><span>Entrada</span>Campanha, agenda e CRM</div>
+    <div class="si-sector-step"><span>Agente</span>Agente cruza demanda, margem e capacidade</div>
+    <div class="si-sector-step"><span>Resultado</span>Oferta ajustada por agenda disponível</div>
+  </div>
+  <div class="si-sector-outcome">
+    <div>
+      <p class="si-sector-label">Ganho tangível</p>
+      <p class="si-sector-copy">Mais pacientes com menos superlotação, menos no-show e melhor controle de rentabilidade.</p>
+    </div>
+    <div>
+      <p class="si-sector-label">Piloto recomendado</p>
+      <p class="si-sector-copy">Motor de crescimento com IA para campanhas, agenda e retenção.</p>
+    </div>
+  </div>
+</article>
+    </div>
+    <div class="si-sector-note">O mesmo raciocínio conecta marketing, comercial, operação e entrega para que a IA ajude a crescer sem sacrificar reputação.</div>
+  </div>
+</section>
+<!-- SI sector examples end -->
 
 <section class="scene-section reveal" id="cena-2"><div class="wrap"><details class="scene-card cc-2 reveal"><summary class="scene-summary"><div class="scene-circle">02</div><div class="scene-meta"><div class="scene-eyebrow"><span class="eyebrow-tag">Cena 02 · A conta segura</span><span class="scene-readtime"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>4 min de leitura</span></div><h2 class="scene-title">A conta que ninguém te mostrou: <span class="gold">qual CAC sua operação suporta</span>.</h2><p class="scene-tagline">A pergunta não é quanto gastar para conseguir cliente. É quanto gastar sem destruir margem, caixa, entrega e reputação.</p><div class="scene-glance"><span class="glance-pill">CAC máximo seguro</span><span class="glance-pill">Margem e payback</span><span class="glance-pill">Calculadora prática</span></div></div><span class="scene-toggle-label">Expandir</span><div class="scene-toggle"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div></summary><div class="scene-body"><p class="scene-lead">Métrica isolada engana. Um CAC que parece aceitável pode ser perigoso se o serviço tem margem baixa, recebimento lento, entrega pesada ou retrabalho alto.</p><div class="flow-panel"><div class="flow-title">Fluxo visual · orçamento comercial seguro</div><div class="flow-row" style="--cols:5"><div class="flow-step"><div class="flow-num">01</div><b>Ticket</b><span>Quanto entra por contrato ou ciclo de contratação.</span></div><div class="flow-step"><div class="flow-num">02</div><b>LTV</b><span>Quanto o cliente tende a gerar ao longo da relação.</span></div><div class="flow-step"><div class="flow-num">03</div><b>Margem</b><span>Quanto sobra depois de entregar, vender e operar.</span></div><div class="flow-step"><div class="flow-num">04</div><b>CAC seguro</b><span>Quanto pode ser gasto sem quebrar a unidade econômica.</span></div><div class="flow-step"><div class="flow-num">05</div><b>Orçamento</b><span>Quantos clientes a empresa quer e pode absorver.</span></div></div></div><div class="tool-wrap"><h3>Calculadora de CAC Seguro</h3><p>Use como simulação estratégica. Os números não substituem análise financeira, mas ajudam a revelar se o plano comercial está saudável.</p><div class="tool-grid"><div class="tool-field"><label>Ticket médio</label><input id="ticket" type="number" value="10000" min="0"/></div><div class="tool-field"><label>LTV estimado</label><input id="ltv" type="number" value="18000" min="0"/></div><div class="tool-field"><label>Margem real (%)</label><input id="margem" type="number" value="55" min="0" max="100"/></div><div class="tool-field"><label>Clientes desejados/mês</label><input id="clientes" type="number" value="5" min="1"/></div></div><button class="tool-btn" type="button" onclick="calcCAC(event)">Calcular limite seguro</button><div class="tool-result" id="cacResult"><div class="result-grid"><div class="result-item"><div class="ri-val" id="cacMax">R$ 0</div><div class="ri-label">CAC máximo sugerido</div></div><div class="result-item"><div class="ri-val" id="budget">R$ 0</div><div class="ri-label">Orçamento mensal</div></div><div class="result-item"><div class="ri-val" id="lucro">R$ 0</div><div class="ri-label">Lucro bruto estimado</div></div><div class="result-item"><div class="ri-val" id="payback">0x</div><div class="ri-label">LTV / CAC</div></div></div><p id="cacDiag" style="margin-top:14px"></p></div></div><div class="editorial-paper"><p><strong>Regra prática:</strong> uma operação madura não decide investimento comercial apenas por entusiasmo. Ela cruza aquisição, conversão, margem, capacidade de entrega e tempo de ativação. Sem essa conta, tráfego vira aposta.</p></div></div></details></div></section>
 
@@ -183,7 +331,7 @@ html{scroll-behavior:smooth}body{background:var(--c-black);color:var(--c-body);f
 </main>
 <section class="faq reveal" id="faq"><div class="wrap"><div class="section-head"><h2>Objeções comuns antes de acelerar</h2><p>As dúvidas abaixo aparecem quando o profissional percebe que crescimento não é apenas volume. É sistema.</p></div><div class="faq-item" data-faq><button class="faq-q" type="button">Funciona para escritórios pequenos?<span>+</span></button><div class="faq-a"><div class="faq-a-inner">Sim. Na verdade, quanto menor a operação, mais importante é não comprar caos. O objetivo é começar com poucos indicadores, um fluxo simples e uma rotina semanal de correção.</div></div></div><div class="faq-item" data-faq><button class="faq-q" type="button">Funciona para negócios de serviços fora do Direito?<span>+</span></button><div class="faq-a"><div class="faq-a-inner">Sim. A engenharia é a mesma: demanda, diagnóstico, proposta, ativação, entrega, métrica e governança. O vocabulário muda; a arquitetura permanece.</div></div></div><div class="faq-item" data-faq><button class="faq-q" type="button">Preciso ter CRM antes de aplicar?<span>+</span></button><div class="faq-a"><div class="faq-a-inner">Não necessariamente. Mas você precisa ter alguma forma confiável de registrar origem, estágio, responsável, próxima ação e motivo de perda. Sem isso, decisão comercial vira memória.</div></div></div><div class="faq-item" data-faq><button class="faq-q" type="button">A IA pode substituir o time comercial?<span>+</span></button><div class="faq-a"><div class="faq-a-inner">Não é esse o ponto. A IA ajuda a qualificar, organizar, lembrar, sugerir e auditar. O julgamento humano continua essencial nas decisões sensíveis, estratégicas e de maior risco.</div></div></div><div class="faq-item" data-faq><button class="faq-q" type="button">Quanto tempo leva para organizar isso?<span>+</span></button><div class="faq-a"><div class="faq-a-inner">Depende do nível de maturidade atual. Em geral, o primeiro ganho vem quando a empresa mapeia o fluxo real, escolhe um gargalo e cria uma rotina de correção semanal.</div></div></div></div></section>
 <section class="reveal"><div class="wrap"><div class="cta-final"><h2>Antes de comprar mais demanda, <span class="gold">descubra onde o sistema quebra</span>.</h2><p>A equipe da Super Inteligênc[IA] pode ajudar a mapear seu fluxo, identificar gargalos e construir a arquitetura inteligente que transforma crescimento em escala segura.</p><a class="btn-primary" href="https://wa.me/message/NSPS5ULND5FNP1" target="_blank" rel="noopener">Falar com a equipe no WhatsApp</a></div></div></section>
-<section class="reveal"><div class="wrap"><div class="expert"><div class="expert-photo" role="img" aria-label="Identidade visual da Super Inteligênc[IA]"></div><div><h3>Conheça o especialista</h3><p>Marcílio Guedes Drummond lidera a Super Inteligênc[IA], com foco em IA, automação, gestão estratégica e arquitetura de serviços para advogados, empreendedores e prestadores de serviço.</p><ul class="plain-list"><li>CEO e fundador da Super Inteligênc[IA], empresa de IA aplicada com mais de 100 mil clientes atendidos.</li><li>Autor de 14 livros, com atuação em inovação jurídica, design de serviços e gestão aplicada.</li><li>Trabalha com arquitetura inteligente para transformar operação, crescimento e governança em ativos de negócio.</li></ul><div class="expert-stats"><div class="stat"><b>+460k</b><span>audiência</span></div><div class="stat"><b>+170k</b><span>YouTube</span></div><div class="stat"><b>+100k</b><span>clientes</span></div><div class="stat"><b>14</b><span>livros</span></div><div class="stat"><b>+R$1,5 bi</b><span>valor gerado</span></div></div><div class="tags"><span class="tag">Advogado & empresário</span><span class="tag">Design de Serviços e Produtos</span><span class="tag">IA aplicada</span><span class="tag">Governança embarcada</span><span class="tag">Mentor Sebrae</span></div></div></div></div></section>
+<section class="reveal"><div class="wrap"><div class="expert"><div class="expert-photo" role="img" aria-label="Identidade visual da Super Inteligênc[IA]"></div><div><h3>Conheça o especialista</h3><p>Marcílio Guedes Drummond lidera a Super Inteligênc[IA], com foco em IA, automação, gestão estratégica e arquitetura de serviços para advogados, empreendedores e prestadores de serviço.</p><ul class="plain-list"><li>CEO e fundador da Super Inteligênc[IA], empresa de IA aplicada com mais de 100 mil clientes atendidos.</li><li>Autor de 14 livros, com atuação em inovação jurídica, design de serviços e gestão aplicada.</li><li>Trabalha com arquitetura inteligente para transformar operação, crescimento e governança em ativos de negócio.</li></ul><div class="expert-stats"><div class="stat"><b>+460k</b><span>audiência</span></div><div class="stat"><b>+190k</b><span>YouTube</span></div><div class="stat"><b>+100k</b><span>clientes</span></div><div class="stat"><b>14</b><span>livros</span></div><div class="stat"><b>+R$1,5 bi</b><span>valor gerado</span></div></div><div class="tags"><span class="tag">Advogado & empresário</span><span class="tag">Design de Serviços e Produtos</span><span class="tag">IA aplicada</span><span class="tag">Governança embarcada</span><span class="tag">Mentor Sebrae</span></div></div></div></div></section>
 <footer class="footer"><div class="wrap"><div class="footer-social"><a href="https://www.youtube.com/@SuperInteligencIAOficial" target="_blank" rel="noopener">YouTube</a><a href="https://www.instagram.com/marcilio.drummond/" target="_blank" rel="noopener">Instagram</a><a href="https://www.linkedin.com/in/marcilioguedesdrummond/" target="_blank" rel="noopener">LinkedIn</a><a href="https://site.superinteligencia.org/" target="_blank" rel="noopener">Site</a></div><div class="footer-legal"><a href="https://site.superinteligencia.org/legal/termos-de-uso" target="_blank" rel="noopener">Termos de Uso</a><span class="sep">·</span><a href="https://portfoliotech.superinteligencia.org/politica-corporativa" target="_blank" rel="noopener">Política de Privacidade</a><span class="sep">·</span><a href="https://portfoliotech.superinteligencia.org/politica-uso-ia" target="_blank" rel="noopener">Política de Uso de IA</a><span class="sep">·</span><a href="https://portfoliotech.superinteligencia.org/" target="_blank" rel="noopener">Portfólio</a></div><div class="footer-copy">© Super Inteligênc[IA] · Todos os direitos reservados.</div></div></footer>
 <button class="scroll-top" id="scrollTop" aria-label="Voltar ao topo"><svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg></button>
 <div class="exit-overlay" id="exitPopup" aria-hidden="true"><div class="exit-box"><button class="exit-close" id="exitClose" type="button" aria-label="Fechar">×</button><div class="badge">Diagnóstico antes de acelerar</div><h2 style="font-size:clamp(26px,4vw,40px);margin:10px 0">Mais demanda pode ser o próximo problema.</h2><p>Antes de investir em aquisição, mapeie se sua operação está pronta para converter, ativar e entregar com segurança.</p><a class="btn-primary" href="https://wa.me/message/NSPS5ULND5FNP1" target="_blank" rel="noopener">Quero mapear meu sistema</a></div></div>
@@ -202,7 +350,6 @@ qsa('[data-faq]').forEach(function(item){var q=qs('.faq-q',item),a=qs('.faq-a',i
 qsa('.tool-btn,.btn-primary').forEach(function(btn){btn.addEventListener('click',function(e){var rect=this.getBoundingClientRect(),r=document.createElement('span'),size=Math.max(rect.width,rect.height);r.className='ripple';r.style.width=r.style.height=size+'px';r.style.left=(e.clientX-rect.left-size/2)+'px';r.style.top=(e.clientY-rect.top-size/2)+'px';this.appendChild(r);setTimeout(function(){r.remove()},650)})});
 window.calcCAC=function(e){var res=qs('#cacResult');if(res){res.classList.add('show');res.insertAdjacentHTML('afterbegin','<div class="skeleton" id="sk" style="height:54px;margin-bottom:12px"></div>')}setTimeout(function(){var sk=qs('#sk');if(sk)sk.remove();var ticket=parseFloat(qs('#ticket').value)||0,ltv=parseFloat(qs('#ltv').value)||0,m=parseFloat(qs('#margem').value)||0,clientes=parseFloat(qs('#clientes').value)||1;var base=(ltv||ticket)*(m/100);var cacMax=Math.max(0,Math.min(base*.35,ticket*.25));var budget=cacMax*clientes;var lucro=ticket*(m/100)*clientes-budget;var ratio=cacMax>0?(ltv/cacMax):0;qs('#cacMax').textContent=money(cacMax);qs('#budget').textContent=money(budget);qs('#lucro').textContent=money(lucro);qs('#payback').textContent=ratio.toFixed(1)+'x';var diag=qs('#cacDiag');if(m<35){diag.innerHTML='<span class="score-card score-low">Atenção</span> A margem informada está baixa. Corrija preço, escopo ou custo de entrega antes de acelerar aquisição.'}else if(ratio<3){diag.innerHTML='<span class="score-card score-med">Cuidado</span> O LTV ainda está apertado em relação ao CAC. Busque recorrência, expansão ou ticket maior.'}else{diag.innerHTML='<span class="score-card score-high">Sinal saudável</span> A simulação sugere espaço para aquisição, desde que a operação tenha capacidade de atendimento e ativação.'}showToast('Limite seguro calculado')},420)};
 window.toggleTile=function(el){el.classList.toggle('checked');var total=qsa('#scaleTiles .check-tile').length,checked=qsa('#scaleTiles .check-tile.checked').length,pct=Math.round(checked/total*100);qs('#scaleFill').style.width=pct+'%';var r=qs('#scaleResult');var cls='score-low',title='Base frágil';if(pct>=75){cls='score-high';title='Pronto para acelerar com controle'}else if(pct>=45){cls='score-med';title='Base intermediária'}r.innerHTML='<span class="score-card '+cls+'">'+checked+' de '+total+' itens</span><p style="margin-top:10px;color:var(--c-body)"><strong>'+title+':</strong> '+(pct>=75?'sua operação já demonstra sinais de maturidade. O próximo passo é refinar governança e IA por função.':pct>=45?'há estrutura, mas ainda existem gargalos que podem transformar demanda em retrabalho.':'antes de comprar mais demanda, organize o fluxo mínimo de venda, ativação e métricas.')+'</p>';showToast('Diagnóstico atualizado')};
-var milestones=[{p:25,m:'25% concluído — o erro de origem ficou claro',f:false},{p:50,m:'50% concluído — a conta segura entrou no radar',f:false},{p:75,m:'75% concluído — IA e governança conectadas',f:false},{p:100,m:'100% — Como Parar de Comprar Caos completo',f:false}];window.addEventListener('scroll',function(){var h=document.body.scrollHeight-window.innerHeight;if(h<=0)return;var pct=Math.round(window.scrollY/h*100);milestones.forEach(function(x){if(!x.f&&pct>=x.p){x.f=true;showToast(x.m)}})},{passive:true});
 var st=qs('#scrollTop');if(st){window.addEventListener('scroll',function(){st.classList.toggle('show',window.scrollY>600)},{passive:true});st.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})})}
 (function(){var fired=false,pop=qs('#exitPopup'),close=qs('#exitClose');if(!pop||!close)return;function show(){if(fired||window.scrollY<800)return;fired=true;pop.classList.add('active');pop.setAttribute('aria-hidden','false')}function hide(){pop.classList.remove('active');pop.setAttribute('aria-hidden','true')}document.addEventListener('mouseout',function(e){if(e.clientY<5&&e.relatedTarget===null)show()});var ly=0,lt=0;window.addEventListener('scroll',function(){var y=window.scrollY,t=Date.now();if(lt&&y<ly&&(ly-y)>120&&(t-lt)<250&&y>800)show();ly=y;lt=t},{passive:true});document.addEventListener('visibilitychange',function(){if(document.visibilityState==='hidden'&&window.scrollY>1200)show()});close.addEventListener('click',hide);pop.addEventListener('click',function(e){if(e.target===pop)hide()});document.addEventListener('keydown',function(e){if(e.key==='Escape')hide()})})();
 })();
